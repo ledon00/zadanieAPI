@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">zadanie API</string>
+    <string name="img_txt">Book cover</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear search</string>
+    <string name="fail_message">Something went wrong... Please try later!</string>
+    <string name="title">Title: </string>
+    <string name="author">\nAuthor: </string>
+    <string name="no_pages">\nNumber of pages: </string>
+    <string name="ebook_count">\nEbook Count: </string>
+    <string name="languages">\nAvailable languages: </string>
+    <string name="publishers">\nBook publishers: </string>
+</resources>
