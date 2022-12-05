@@ -9,19 +9,20 @@
 
     <ImageView
         android:id="@+id/img_cover"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="25dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="30dp"
         android:contentDescription="@string/img_txt"
-        android:layout_marginTop="10dp"
         android:scaleType="centerInside" />
 
     <TextView
         android:id="@+id/book_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="125dp"
         android:layout_marginTop="20dp"
+        android:textAlignment="center"
         android:textAppearance="?attr/textAppearanceListItem" />
 
     <TextView
@@ -29,34 +30,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:textAppearance="?attr/textAppearanceListItem" />
 
     <TextView
-        android:id="@+id/book_languages"
+        android:id="@+id/first_publish_year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="25dp"
-        android:textAppearance="?attr/textAppearanceListItem" />
-
-    <TextView
-        android:id="@+id/book_publishers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="25dp"
-        android:textAppearance="?attr/textAppearanceListItem" />
-
-    <TextView
-        android:id="@+id/book_ebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
         android:textAppearance="?attr/textAppearanceListItem" />
 
     <TextView

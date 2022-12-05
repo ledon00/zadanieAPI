@@ -17,11 +17,8 @@ public class BookDetailsActivity extends AppCompatActivity {
     private TextView bookTitleTextView;
     private TextView bookAuthorTextView;
     private TextView numberOfPagesTextView;
+    private TextView firstPublishYearTextView;
     private ImageView bookCover;
-
-    private TextView bookEbookTextView;
-    private TextView bookLanguagesTextView;
-    private TextView bookPublishersTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,23 +28,18 @@ public class BookDetailsActivity extends AppCompatActivity {
         bookTitleTextView = findViewById(R.id.book_title);
         bookAuthorTextView = findViewById(R.id.book_author);
         numberOfPagesTextView=findViewById(R.id.number_of_pages);
+        firstPublishYearTextView=findViewById(R.id.first_publish_year);
         bookCover = findViewById(R.id.img_cover);
-        bookEbookTextView = findViewById(R.id.book_ebook);
-        bookLanguagesTextView = findViewById(R.id.book_languages);
-        bookPublishersTextView = findViewById(R.id.book_publishers);
 
         Book book = (Book) getIntent().getSerializableExtra(EXTRA_BOOK_OBJ);
 
         bookTitleTextView.setText(getString(R.string.title)+" " + book.getTitle());
         bookAuthorTextView.setText(getString(R.string.author) +" "+ TextUtils.join(", ", book.getAuthors()));
+        firstPublishYearTextView.setText(getString(R.string.first_publish_year)+ " " +book.getFirstPublishYear());
         if(book.getNumberOfPages()!=null)
         {
             numberOfPagesTextView.setText(getString(R.string.no_pages) +" "+ book.getNumberOfPages());
         }
-        bookEbookTextView.setText(getString(R.string.ebook_count) +" "+ book.getEbookcount());
-
-        bookLanguagesTextView.setText(getString(R.string.languages) +" "+ TextUtils.join(", ", book.getLanguages()));
-        bookPublishersTextView.setText(getString(R.string.publishers) +"\n "+ TextUtils.join(",\n ", book.getPublishers()));
 
         if (book.getCover() != null) {
             Picasso.with(getApplicationContext())

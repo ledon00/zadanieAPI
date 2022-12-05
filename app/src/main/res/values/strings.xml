@@ -7,7 +7,5 @@
     <string name="title">Title: </string>
     <string name="author">\nAuthor: </string>
     <string name="no_pages">\nNumber of pages: </string>
-    <string name="ebook_count">\nEbook Count: </string>
-    <string name="languages">\nAvailable languages: </string>
-    <string name="publishers">\nBook publishers: </string>
+    <string name="first_publish_year">First publish date: </string>
 </resources>

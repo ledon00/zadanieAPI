@@ -133,14 +133,12 @@ public class MainActivity extends AppCompatActivity {
 
             private TextView bookTitleTextView;
             private TextView bookAuthorTextView;
-            private TextView numberOfPagesTextView;
             private ImageView bookCover;
 
             public BookHolder(LayoutInflater inflater, ViewGroup parent) {
                 super(inflater.inflate(R.layout.book_list_item, parent, false));
                 bookTitleTextView = itemView.findViewById(R.id.book_title);
                 bookAuthorTextView = itemView.findViewById(R.id.book_author);
-                numberOfPagesTextView=itemView.findViewById(R.id.number_of_pages);
                 bookCover = itemView.findViewById(R.id.img_cover);
             }
 
@@ -148,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
                 if (book != null && checkNullOrEmpty(book.getTitle()) && book.getAuthors() != null) {
                     bookTitleTextView.setText(book.getTitle());
                     bookAuthorTextView.setText(TextUtils.join(", ", book.getAuthors()));
-                    numberOfPagesTextView.setText(book.getNumberOfPages());
                     View itemContainer = itemView.findViewById(R.id.book_item_container);
                     itemContainer.setOnClickListener(v -> {
                         Intent intent = new Intent(MainActivity.this, BookDetailsActivity.class);
